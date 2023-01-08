@@ -13,4 +13,4 @@
 
 <h3>Installation</h3>
 
-<p>  </p>
+<p> Après avoir cloné le projet avec: git clone  </p>
