@@ -1,0 +1,16 @@
+.cards-warp{
+    display: flex;
+
+}
+.card{
+    width: 30%;
+    height: 32vh;
+    margin: 5%;
+    border: solid 2px #001347;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer{
+margin-top: 28vh;
+}

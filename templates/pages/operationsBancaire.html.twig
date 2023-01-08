@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Opérations Bancaire{% endblock %}
+
+{% block body %}
+
+<div class="contribute">
+    {% for operation in operations %}
+        {% if operation.lieu == null %}
+        <p>Opérations Bancaire</p>
+            {{operation.date|date("d/m/Y")}}
+            {{operation.libellé}}
+            <a href="{{ path('app_contribution_edit', {id: operation.id, slug: operation.positionGps}) }}">selectionner un lieu</a>
+            
+           
+        {% endif %}
+    {% endfor %}  
+</div>
+{% endblock %}

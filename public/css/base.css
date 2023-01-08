@@ -1,0 +1,66 @@
+body{
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form{
+    color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+    width: 33%;
+    margin-left: 33%;
+    height: 40vh;
+    border-radius: 10px;
+    background-color: #001347;
+}
+
+.inscription{
+    color: white;
+    cursor: pointer;
+}
+
+.inscription:hover{
+    color: white;
+}
+
+input{
+    margin-top: 2vh;
+}
+
+button{
+    height: 5vh;
+    color: #05ebae;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    background-color: #001347;
+    border-color: #05ebae;;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color:#05ebae;
+}
+
+ul{
+    list-style: none;
+}
+
+footer{
+    text-align: center;
+    margin-top: 35vh;
+}

@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Compte Admin{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('css/admin.css')}}">
+{% endblock %}
+{% block body %}
+<h2>Profils Utilisateur</h2>
+<div class="cards-warp">
+   {% for user in users %}
+    <div class="card">
+    <p>Prénom : {{user.lastname}}</p>
+    <p> Nom : {{user.firstname}}</p>
+    <p> Email : {{user.email}}</p>
+    <a href="{{ path('admin_user', {id: user.id }) }}">Compte</a>
+    </div>
+   {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+<nav>
+    <a href="{{ path('app_home') }}"><h1>My App</h1></a>
+    {% if app.user %}
+    <p>Bienvenue, {{ app.user.lastName}}</p>
+    <ul>
+        <li>
+            <a href="{{path('app_logout')}}">Me déconnecter</a>
+        </li>
+    {% endif %}
+    {% if is_granted("ROLE_ADMIN") %}
+        <li>
+        <a href="{{path('admin_index')}}">Admin</a>
+        </li>
+    {% endif %}
+    </ul>
+   
+</nav>
+

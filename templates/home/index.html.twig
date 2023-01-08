@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon compte{% endblock %}
+{% block stylesheets %}
+<link rel="stylesheet" href="{{asset('css/home.css')}}">
+{% endblock %}
+{% block body %}
+   <h3>Mon compte</h3>
+   <a href="{{path('app_operationsBancaire')}}">A contribuer</a> 
+   <div>
+  <p> Nombres de lieu à Valider : {{placesNoValid}}</p>
+  <p> Nombres de lieu Validé: {{placesValid}}</p>
+
+   </div>
+{% endblock %}
+
