@@ -14,3 +14,6 @@
 <h3>Installation</h3>
 
 <p> Après avoir cloné le projet avec: git clone  </p>
+<div>https://github.com/aurelflambard/my-app.git</div>
+
+<p>Exécutez la commande cd my-app pour vous rendre dans le dossier depuis le terminal.</p>
